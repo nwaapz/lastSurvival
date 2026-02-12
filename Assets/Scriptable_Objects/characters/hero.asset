@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21c6c9fdbaadda468c6229ee38d983e, type: 3}
+  m_Name: hero
+  m_EditorClassIdentifier: 
+  CharacterName: 1
+  poseMappings:
+  - poseType: 0
+    sprite: {fileID: 21300000, guid: e2bdff8f552c47d4aa379662559f5fa4, type: 3}
+  - poseType: 1
+    sprite: {fileID: 21300000, guid: 276cd0bb131b440448a14692ba50d473, type: 3}
+  - poseType: 2
+    sprite: {fileID: 21300000, guid: 7d5d63e4400a88a4a84b9f1c81b3fe4c, type: 3}
+  - poseType: 3
+    sprite: {fileID: 21300000, guid: 3cd18b0d24b6de746848e31319058982, type: 3}
+  - poseType: 4
+    sprite: {fileID: 21300000, guid: 542a04fb3637ac54d87e695f39296fdc, type: 3}
+  - poseType: 5
+    sprite: {fileID: 21300000, guid: 91758ef7a370a8048b65b4680f2c76ca, type: 3}
+  - poseType: 6
+    sprite: {fileID: 21300000, guid: d66aef8bb7d611d49bf6aa67420d96e8, type: 3}
+  - poseType: 7
+    sprite: {fileID: -1451677054605553910, guid: c76deee15c3014e46b849e2bfd2325a3, type: 3}
+  - poseType: 7
+    sprite: {fileID: -1451677054605553910, guid: c76deee15c3014e46b849e2bfd2325a3, type: 3}

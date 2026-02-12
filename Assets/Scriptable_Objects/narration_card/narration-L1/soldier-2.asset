@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a71a6c0b5d01e3469f0311470f2a8f1, type: 3}
+  m_Name: soldier-2
+  m_EditorClassIdentifier: 
+  characterName: 5
+  poseType: 7
+  message: "Fishermen saw a ship in the night fog. Black hull, torn sails\u2026 crew
+    of dead men walking. It sails straight for our harbor."

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa55af32be1db03408b281936f477d50, type: 3}
+  m_Name: Ak47
+  m_EditorClassIdentifier: Assembly-CSharp::Configs.WeaponConfig
+  weaponModelName: Ak47
+  projectilePrefab: {fileID: 1061566554120871304, guid: 67792d79a0fd1c344b5bcbb0c854032d, type: 3}
+  muzzleFlashPrefab: {fileID: 0}
+  muzzleFlashOffset: {x: 0, y: 0, z: 0}
+  fireRate: 2
+  damage: 10
+  bulletRange: 30
+  shootAudio: {fileID: 8300000, guid: a01be2f8786825643a7ccaee631a61a2, type: 3}
+  audioVolume: 0.3

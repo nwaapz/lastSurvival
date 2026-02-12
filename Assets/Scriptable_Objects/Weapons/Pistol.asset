@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa55af32be1db03408b281936f477d50, type: 3}
+  m_Name: Pistol
+  m_EditorClassIdentifier: Assembly-CSharp::Configs.WeaponConfig
+  weaponModelName: Pistol
+  projectilePrefab: {fileID: 2022821811047361529, guid: 2ed35f61bd1d5a2498f917fd89e2bc43, type: 3}
+  muzzleFlashPrefab: {fileID: 152484, guid: 23fc589b73077394db72d954703e8d1c, type: 3}
+  muzzlePointName: BulletMuzzleFire
+  fireRate: 5
+  damage: 3
+  bulletRange: 30
+  bulletCount: 1
+  bulletSpacing: 0.5
+  shootAudio: {fileID: 8300000, guid: a01be2f8786825643a7ccaee631a61a2, type: 3}
+  audioVolume: 0.3
