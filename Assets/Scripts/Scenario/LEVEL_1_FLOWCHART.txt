@@ -1,0 +1,148 @@
+================================================================================
+                        LEVEL 1 SCENARIO FLOWCHART
+================================================================================
+
+GAME STARTS (BaseBuilder Scene)
+    |
+    v
+┌───────────────────────────────────────────────────────────────────────────┐
+│ STEP 1: Camera Move to Castle                                            │
+│ - Camera smoothly pans to Castle location                                │
+│ - Duration: 1.5 seconds                                                   │
+│ - Player watches                                                          │
+└───────────────────────────────────────────────────────────────────────────┘
+    |
+    v
+┌───────────────────────────────────────────────────────────────────────────┐
+│ STEP 2: Soldier Enters Castle                                            │
+│ - Soldier automatically walks to Castle                                  │
+│ - Player watches soldier move                                            │
+│ - Waits until soldier arrives                                            │
+└───────────────────────────────────────────────────────────────────────────┘
+    |
+    v
+┌───────────────────────────────────────────────────────────────────────────┐
+│ STEP 3: Dialogue - Soldier Report                                        │
+│ - Narration popup appears                                                │
+│ - Soldier: "Commander! Zombies near the Port!"                           │
+│ - Player clicks to continue                                              │
+└───────────────────────────────────────────────────────────────────────────┘
+    |
+    v
+┌───────────────────────────────────────────────────────────────────────────┐
+│ STEP 4: Dialogue - Commander Response                                    │
+│ - Narration popup appears                                                │
+│ - Commander: "We must defend the Port!"                                  │
+│ - Player clicks to continue                                              │
+└───────────────────────────────────────────────────────────────────────────┘
+    |
+    v
+┌───────────────────────────────────────────────────────────────────────────┐
+│ STEP 5: Dialogue - Call to Action                                        │
+│ - Narration popup appears                                                │
+│ - Commander: "Move to the Port immediately!"                             │
+│ - Player clicks to continue                                              │
+└───────────────────────────────────────────────────────────────────────────┘
+    |
+    v
+┌───────────────────────────────────────────────────────────────────────────┐
+│ STEP 6: Camera Move to Port                                              │
+│ - Camera smoothly pans to Port location                                  │
+│ - Duration: 2.0 seconds                                                   │
+│ - Player sees the Port area                                              │
+└───────────────────────────────────────────────────────────────────────────┘
+    |
+    v
+┌───────────────────────────────────────────────────────────────────────────┐
+│ STEP 7: Show CLASH Button                                                │
+│ - Red "CLASH!" button appears at Port                                    │
+│ - Button follows Port location on screen                                 │
+│ - Player clicks button                                                   │
+└───────────────────────────────────────────────────────────────────────────┘
+    |
+    v
+SCENE TRANSITION TO FIGHT
+    |
+    v
+┌───────────────────────────────────────────────────────────────────────────┐
+│ FIGHT SCENE LOADS                                                         │
+│ - Player fights zombie waves                                             │
+│ - Win or Lose                                                            │
+│ - Return to BaseBuilder or Retry                                         │
+└───────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+
+ASSETS YOU NEED TO CREATE:
+
+ScriptableObjects (Scenario Steps):
+├── Step1_ShowCastle (CameraMoveStep)
+├── Step2_SoldierEntersCastle (MoveUnitToLocationStep)
+├── Step3_SoldierReport (DialogueStep)
+├── Step4_CommanderResponse (DialogueStep)
+├── Step5_CallToAction (DialogueStep)
+├── Step6_ShowPort (CameraMoveStep)
+├── Step7_ClashButton (ShowButtonAtLocationStep)
+└── Level_1_Scenario (LevelScenarioConfig) ← Contains all 7 steps
+
+NarrationLine Assets:
+├── Narration_SoldierReport
+├── Narration_CommanderResponse
+└── Narration_CallToAction
+
+Scene Objects:
+├── Castle (Transform with NamedLocation, locationId="Castle")
+├── Port (Transform with NamedLocation, locationId="Port")
+├── Blacksmith (Transform with NamedLocation, locationId="Blacksmith")
+├── Soldier (GameObject with tag "Player", has HeroClickToMoveBaseBuilder)
+├── ScenarioManager (GameObject with ScenarioManager component)
+└── Canvas/ObjectivePanel (UI with ObjectiveUI component)
+
+================================================================================
+
+PLAYER EXPERIENCE:
+
+Time 0:00 - Game starts, camera at default position
+Time 0:01 - Camera starts moving to Castle (smooth pan)
+Time 0:02 - Camera arrives at Castle
+Time 0:03 - Soldier starts walking to Castle
+Time 0:05 - Soldier arrives at Castle
+Time 0:06 - Narration popup: Soldier reports
+Time 0:10 - Player clicks, next narration
+Time 0:12 - Player clicks, next narration
+Time 0:14 - Player clicks, narration closes
+Time 0:15 - Camera starts moving to Port
+Time 0:17 - Camera arrives at Port
+Time 0:18 - CLASH button appears
+Time 0:20 - Player clicks CLASH
+Time 0:21 - Fight scene loads
+
+Total onboarding time: ~20 seconds (if player clicks quickly)
+
+================================================================================
+
+TIPS FOR POLISH:
+
+1. Add sound effects:
+   - Camera movement whoosh
+   - Soldier footsteps
+   - Narration popup sound
+   - Button click sound
+
+2. Add visual effects:
+   - Camera movement blur
+   - Soldier dust trail
+   - Button pulse/glow animation
+   - Port danger indicator (red glow?)
+
+3. Adjust timing:
+   - Make camera movements faster/slower
+   - Add delays between dialogues
+   - Button appear with animation
+
+4. Enhance narration:
+   - Add more dialogue lines
+   - Show character portraits
+   - Add voice acting
+
+================================================================================

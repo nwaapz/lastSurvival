@@ -1,0 +1,103 @@
+================================================================================
+                    LEVEL 1 ONBOARDING - QUICK START
+================================================================================
+
+YOUR SCENARIO: Camera → Castle → Soldier walks in → Conversation → 
+               Camera → Port → CLASH button → Fight scene
+
+================================================================================
+STEP 1: SCENE SETUP (2 minutes)
+================================================================================
+
+Add NamedLocation to your 3 transforms:
+  Castle:     locationId = "Castle"
+  Port:       locationId = "Port"
+  Blacksmith: locationId = "Blacksmith"
+
+Create ScenarioManager GameObject:
+  - Add ScenarioManager component
+  - Auto Start: ✓
+  - Persist Across Scenes: ✓
+
+Create ObjectiveUI on Canvas:
+  - Panel with ObjectiveUI component
+  - Assign text fields
+
+================================================================================
+STEP 2: CREATE NARRATION (3 minutes)
+================================================================================
+
+Create 3 NarrationLine assets:
+  1. Narration_SoldierReport:     "Zombies near the Port!"
+  2. Narration_CommanderResponse: "We must defend!"
+  3. Narration_CallToAction:      "Move to the Port!"
+
+================================================================================
+STEP 3: CREATE SCENARIO STEPS (5 minutes)
+================================================================================
+
+Create these 7 ScriptableObjects:
+
+1. Step1_ShowCastle (CameraMoveStep)
+   - targetLocationId: "Castle"
+   - movementDuration: 1.5
+
+2. Step2_SoldierEntersCastle (MoveUnitToLocationStep)
+   - unitTag: "Player"
+   - targetLocationId: "Castle"
+
+3. Step3_SoldierReport (DialogueStep)
+   - lines: [Narration_SoldierReport]
+
+4. Step4_CommanderResponse (DialogueStep)
+   - lines: [Narration_CommanderResponse]
+
+5. Step5_CallToAction (DialogueStep)
+   - lines: [Narration_CallToAction]
+
+6. Step6_ShowPort (CameraMoveStep)
+   - targetLocationId: "Port"
+   - movementDuration: 2.0
+
+7. Step7_ClashButton (ShowButtonAtLocationStep)
+   - buttonText: "CLASH!"
+   - targetLocationId: "Port"
+   - sceneToLoad: "Fight"
+
+================================================================================
+STEP 4: CREATE LEVEL CONFIG (1 minute)
+================================================================================
+
+Create Level_1_Scenario (LevelScenarioConfig):
+  - levelNumber: 1
+  - steps: [All 7 steps in order]
+  - advanceLevelOnComplete: ✓
+
+================================================================================
+STEP 5: ASSIGN TO MANAGER (30 seconds)
+================================================================================
+
+Select ScenarioManager:
+  - Level Scenarios → Size = 1
+  - Element 0 = Level_1_Scenario
+
+================================================================================
+STEP 6: PRESS PLAY! 🎮
+================================================================================
+
+Watch the magic happen:
+  1. Camera → Castle
+  2. Soldier walks in
+  3. Conversation (click through)
+  4. Camera → Port
+  5. CLASH button appears
+  6. Click → Fight scene!
+
+Debug: Press F1 for debug window, N to skip steps
+
+================================================================================
+TOTAL TIME: ~12 minutes to setup
+PLAYER EXPERIENCE: ~20 seconds of cinematic onboarding
+================================================================================
+
+NEXT: See LEVEL_1_ONBOARDING_GUIDE.md for detailed instructions!

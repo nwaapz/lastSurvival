@@ -1,0 +1,158 @@
+================================================================================
+              CHARACTER MANAGER + SERVICELOCATOR INTEGRATION
+================================================================================
+
+WHAT CHANGED:
+-------------
+✓ CharacterManager now implements IService
+✓ CharacterManager registered with ServiceLocator
+✓ Scenario steps use ServiceLocator.Instance.Get<CharacterManager>()
+✓ No more direct singleton access (CharacterManager.Instance)
+
+================================================================================
+SETUP STEPS:
+================================================================================
+
+STEP 1: Add CharacterManager to ServiceLocator
+-----------------------------------------------
+
+Option A - ServiceLocator Already Exists:
+  1. Select ServiceLocator GameObject
+  2. Add Component → CharacterManager (if not already there)
+  3. In ServiceLocator component, find "Services" array
+  4. Increase Size by 1
+  5. Drag CharacterManager component into new slot
+
+Option B - Create New ServiceLocator:
+  1. Create Empty GameObject: "ServiceLocator"
+  2. Add Component → ServiceLocator
+  3. Add Component → CharacterManager
+  4. In ServiceLocator:
+     - Services → Size = 1
+     - Element 0 → Drag CharacterManager component
+
+CRITICAL: CharacterManager MUST be in the Services array!
+
+================================================================================
+STEP 2: Setup Characters (Same as Before)
+================================================================================
+
+For each character (Hero, Janet, Pedi, Commander):
+  1. Select character GameObject
+  2. Add Component → CharacterController
+  3. Set Character Name dropdown (Hero, Janet, Pedi, or Commander)
+  4. Player Control Enabled: ✓
+
+================================================================================
+VERIFICATION:
+================================================================================
+
+Press Play and check Console:
+  ✓ Should see: "[CharacterManager] Initialized via ServiceLocator"
+  ✓ Should see: "[CharacterManager] Registered character: Hero"
+  ✓ Should see: "[CharacterManager] Total characters registered: X"
+
+If you DON'T see these messages:
+  ❌ CharacterManager not in ServiceLocator's Services array
+  ❌ Add it manually (see Step 1)
+
+================================================================================
+HOW IT WORKS:
+================================================================================
+
+OLD WAY (Direct Singleton):
+  CharacterManager.Instance.GetCharacter(CharacterName.Hero);
+
+NEW WAY (ServiceLocator):
+  CharacterManager cm = ServiceLocator.Instance.Get<CharacterManager>();
+  cm.GetCharacter(CharacterName.Hero);
+
+BENEFITS:
+  ✓ Centralized service management
+  ✓ Controlled initialization order
+  ✓ Better for testing and dependency injection
+  ✓ Follows your existing architecture pattern
+
+================================================================================
+UPDATED FILES:
+================================================================================
+
+1. CharacterManager.cs
+   - Now implements IService
+   - Init() method registers all characters
+   - Called automatically by ServiceLocator
+
+2. MoveUnitToLocationStep.cs
+   - Uses ServiceLocator.Instance.Get<CharacterManager>()
+   - No longer uses CharacterManager.Instance
+
+3. SetPlayerControlStep.cs
+   - Uses ServiceLocator.Instance.Get<CharacterManager>()
+   - No longer uses CharacterManager.Instance
+
+================================================================================
+TROUBLESHOOTING:
+================================================================================
+
+ERROR: "CharacterManager not found!"
+CAUSE: CharacterManager not in ServiceLocator's Services array
+FIX:   Add CharacterManager to Services array (see Step 1)
+
+ERROR: "No service registered for type CharacterManager"
+CAUSE: Same as above
+FIX:   Same as above
+
+ERROR: Characters not registered
+CAUSE: CharacterController components missing or Init() not called
+FIX:   
+  1. Check each character has CharacterController
+  2. Check CharacterManager is in Services array
+  3. Check console for "Initialized via ServiceLocator" message
+
+================================================================================
+COMPLETE HIERARCHY EXAMPLE:
+================================================================================
+
+BaseBuilder Scene:
+├── ServiceLocator
+│   ├── ServiceLocator (component)
+│   │   └── Services (array)
+│   │       ├── Element 0: CharacterManager
+│   │       ├── Element 1: CameraHelper (if you add it)
+│   │       └── Element 2: Other services...
+│   └── CharacterManager (component) ← Must be in Services array!
+│
+├── ScenarioManager
+│   ├── ScenarioManager (component)
+│   └── ScenarioDebugger (component, optional)
+│
+├── Characters
+│   ├── Hero
+│   │   ├── HeroMovementBaseBuilder
+│   │   ├── HeroClickToMoveBaseBuilder
+│   │   └── CharacterController (characterName: Hero)
+│   ├── Janet
+│   │   └── CharacterController (characterName: Janet)
+│   ├── Pedi
+│   │   └── CharacterController (characterName: Pedi)
+│   └── Commander
+│       └── CharacterController (characterName: Commander)
+│
+└── Locations
+    ├── Castle (NamedLocation: "Castle")
+    ├── Port (NamedLocation: "Port")
+    └── Blacksmith (NamedLocation: "Blacksmith")
+
+================================================================================
+QUICK TEST:
+================================================================================
+
+1. Press Play
+2. Check Console for:
+   "[CharacterManager] Initialized via ServiceLocator"
+3. If you see it → ✓ Working!
+4. If you don't → ❌ Add CharacterManager to Services array
+
+================================================================================
+
+See LEVEL_1_FINAL_SETUP.md for complete step-by-step instructions!
