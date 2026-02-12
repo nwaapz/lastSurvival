@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8351bf2102dee4aa3033490d970d8c, type: 3}
+  m_Name: DialogueStep
+  m_EditorClassIdentifier: 
+  description: 
+  activeScene: basebuilder
+  isBlocking: 1
+  saveOnComplete: 1
+  lines:
+  - {fileID: 11400000, guid: 1436a4b434547f84589fa95f857d034e, type: 2}
+  - {fileID: 11400000, guid: a14558135767fab4fbf518cf24ade733, type: 2}
+  - {fileID: 11400000, guid: 6b473ae7a3bcf68468b64fd2ce01d025, type: 2}
+  - {fileID: 11400000, guid: 9a8d318e765237e4da1e1e91574f9b7f, type: 2}
+  - {fileID: 11400000, guid: 54d171d7893fc4c49ab752f9a043d697, type: 2}
+  - {fileID: 11400000, guid: eb8b5dfaa0d27074aacbd038c51104d6, type: 2}
+  - {fileID: 11400000, guid: fac5584ed79f5ed4caa8b0c7e880a1cf, type: 2}
+  - {fileID: 11400000, guid: a492cc701fd8fea4b9db7f0982a5f865, type: 2}
+  - {fileID: 11400000, guid: ed1de9705ecdd444ca91ffa74c8f7440, type: 2}
+  - {fileID: 11400000, guid: 8e5a0c8e0589f2440bae515105dfdfba, type: 2}
+  advanceOnClick: 1

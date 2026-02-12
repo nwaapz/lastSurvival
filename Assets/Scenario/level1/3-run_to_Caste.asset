@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2284027569c6845a001a5fd8773270, type: 3}
+  m_Name: 3-run_to_Caste
+  m_EditorClassIdentifier: 
+  description: 
+  activeScene: basebuilder
+  isBlocking: 1
+  saveOnComplete: 0
+  characterToMove: 5
+  movementMode: 1
+  runSpeedMultiplier: 2
+  targetLocation: 8
+  targetLocationId: 
+  arrivalRadius: 1
+  cameraFollowsUnit: 1
+  cameraFollowSmoothing: 0.3
+  lookAtTarget: 1
+  lookAtCharacter: 1
+  lookAtLocation: 0

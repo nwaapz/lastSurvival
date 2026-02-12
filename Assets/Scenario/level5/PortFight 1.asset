@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e6f116f0f2e99943bd42cbbb3260bfc, type: 3}
+  m_Name: PortFight 1
+  m_EditorClassIdentifier: 
+  description: 
+  activeScene: basebuilder
+  isBlocking: 1
+  saveOnComplete: 1
+  targetIconId: port_fight
+  activateIcon: 1
+  blockOtherInput: 1
+  moveCameraToIcon: 1
+  cameraMoveTime: 2
+  hintText: Tap the icon to continue

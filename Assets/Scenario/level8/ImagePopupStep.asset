@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80d40969e0094d4895f7a613f60b411, type: 3}
+  m_Name: ImagePopupStep
+  m_EditorClassIdentifier: 
+  description: 
+  activeScene: basebuilder
+  isBlocking: 1
+  saveOnComplete: 1
+  headerText: BlackSmith
+  bodyText: Upgrade blacksmith for better guns
+  headerImage: {fileID: 21300000, guid: 65241212a977dc5428c0d08b273f80d4, type: 3}
+  bodyImage: {fileID: -4921868072522917809, guid: e15e6ac77d91e6c4dba0aff37844b8b6, type: 3}
+  okButtonText: OK
+  showCancelButton: 0
+  cancelButtonText: Cancel
+  delayBeforeShow: 2

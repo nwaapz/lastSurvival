@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d7c95483cc45b04fa80cb0e8b4b4b38, type: 3}
+  m_Name: Level_7_Scenario
+  m_EditorClassIdentifier: 
+  levelNumber: 7
+  steps:
+  - {fileID: 11400000, guid: 4477d804b27550a4eb272f5c124a1567, type: 2}
+  - {fileID: 11400000, guid: f3fe61789fad30449aaa69c5a61bdc03, type: 2}
+  - {fileID: 11400000, guid: 8a34c742b5b7ee244b0dbccebae8d6ca, type: 2}
+  - {fileID: 11400000, guid: bf605d0b9f579344988fa8d0a5ca064c, type: 2}
+  - {fileID: 11400000, guid: 6d7ed14c2947d1e4eb2b37a13bcac1f2, type: 2}
+  - {fileID: 11400000, guid: 93eb4c51f2f63034da1a666733072937, type: 2}
+  - {fileID: 11400000, guid: f6218f9068c1c4d47be2e1231ec0abe3, type: 2}
+  advanceLevelOnComplete: 1
+  nextSceneOnComplete: 
+  startingSceneName: 
