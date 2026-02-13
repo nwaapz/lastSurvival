@@ -1,0 +1,600 @@
+fileFormatVersion: 2
+guid: 9501934fc32d9ce4d9a959d70e778e76
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 4a00c5dd28576044d8fb2b72c195b70a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: coin
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 513
+      y: 2599
+      width: 475
+      height: 475
+    spriteID: cc9f97336a408024ab8fe713cd556d0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 513, y: 2599}
+    spritePosition: {x: 416, y: 1124}
+  - name: coin_stack
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2012
+      width: 501
+      height: 580
+    spriteID: 72a4dc8969857fe4a938491b604ebf80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2012}
+    spritePosition: {x: 191, y: 1183}
+  - name: 'coin 1 '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1022
+      y: 2012
+      width: 475
+      height: 474
+    spriteID: 494065723d3253a4ba575a85db0406fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1022, y: 2012}
+    spritePosition: {x: 1366, y: 1124}
+  - name: 'coin_stack 1 '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2600
+      width: 501
+      height: 580
+    spriteID: d3fa0d6d31899cd49a7ef4b9bc903076
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2600}
+    spritePosition: {x: 1141, y: 1183}
+  - name: 'shadow 1 '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1022
+      y: 3074
+      width: 650
+      height: 281
+    spriteID: b55b7dbaee7bafe4e803234dc7405ed5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1022, y: 3074}
+    spritePosition: {x: 1109, y: 1092}
+  - name: 'coin 2 '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 513
+      y: 3082
+      width: 475
+      height: 475
+    spriteID: d4b45dec0b5a55e458de7abe194226da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 513, y: 3082}
+    spritePosition: {x: 416, y: 269}
+  - name: 'coin_stack 2 '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3188
+      width: 501
+      height: 579
+    spriteID: 3bb1268d42d9e4441abafbda73aee5ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3188}
+    spritePosition: {x: 191, y: 329}
+  - name: 'shadow 2 '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1022
+      y: 2494
+      width: 650
+      height: 282
+    spriteID: f78d06079a944614894b3254042e6d2b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1022, y: 2494}
+    spritePosition: {x: 159, y: 237}
+  - name: 'coin 3 '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 513
+      y: 3565
+      width: 475
+      height: 475
+    spriteID: fb9a2633ba7688042bce0f38efae812e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 513, y: 3565}
+    spritePosition: {x: 1366, y: 269}
+  - name: 'coin_stack 3 '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 513
+      y: 2012
+      width: 501
+      height: 579
+    spriteID: 73dbf354cb665ec44bf920a68278f314
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 513, y: 2012}
+    spritePosition: {x: 1141, y: 329}
+  - name: 'shadow 3 '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1022
+      y: 2784
+      width: 650
+      height: 282
+    spriteID: 67d240c90f88193438082feb54441b7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1022, y: 2784}
+    spritePosition: {x: 1109, y: 237}
+  - name: background
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 2000
+      height: 2000
+    spriteID: 9a3f3597edb96834db310a45ab2996e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData: []
+  rigSpriteImportData: []
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  generateTileAssets: 0
+  tilePaletteCellLayout: 0
+  tilePaletteHexagonLayout: 0
+  tilePaletteCellSize: {x: 1, y: 1, z: 0}
+  tilePaletteCellSizing: 0
+  transparencySortMode: 0
+  transparencySortAxis: {x: 0, y: 0, z: 1}
+  tileTemplate: {instanceID: 0}
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: coin_stacks
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 23091048a32660c41a14ee75a521943d
+    layerID: 510
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: coin_stack01
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 09cbd8062e5a4664dbfeed090437dc4c
+    layerID: 509
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: coin
+    spriteName: coin
+    isGroup: 0
+    parentIndex: 1
+    spriteID: cc9f97336a408024ab8fe713cd556d0c
+    layerID: 512
+    mosaicPosition: {x: 513, y: 2599}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: coin_stack
+    spriteName: coin_stack
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 72a4dc8969857fe4a938491b604ebf80
+    layerID: 513
+    mosaicPosition: {x: 4, y: 2012}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: coin_stack02
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 05555f266ed29be4e9ae6a7eef067a1e
+    layerID: 385
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: 'coin 1 '
+    spriteName: 'coin 1 '
+    isGroup: 0
+    parentIndex: 4
+    spriteID: 494065723d3253a4ba575a85db0406fa
+    layerID: 514
+    mosaicPosition: {x: 1022, y: 2012}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 'coin_stack 1 '
+    spriteName: 'coin_stack 1 '
+    isGroup: 0
+    parentIndex: 4
+    spriteID: d3fa0d6d31899cd49a7ef4b9bc903076
+    layerID: 515
+    mosaicPosition: {x: 4, y: 2600}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 'shadow 1 '
+    spriteName: 'shadow 1 '
+    isGroup: 0
+    parentIndex: 4
+    spriteID: b55b7dbaee7bafe4e803234dc7405ed5
+    layerID: 516
+    mosaicPosition: {x: 1022, y: 3074}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: coin_stack03
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: e56a1a3d56eaa5d409a5e63973767a1d
+    layerID: 261
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: 'coin 2 '
+    spriteName: 'coin 2 '
+    isGroup: 0
+    parentIndex: 8
+    spriteID: d4b45dec0b5a55e458de7abe194226da
+    layerID: 517
+    mosaicPosition: {x: 513, y: 3082}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 'coin_stack 2 '
+    spriteName: 'coin_stack 2 '
+    isGroup: 0
+    parentIndex: 8
+    spriteID: 3bb1268d42d9e4441abafbda73aee5ef
+    layerID: 518
+    mosaicPosition: {x: 4, y: 3188}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 'shadow 2 '
+    spriteName: 'shadow 2 '
+    isGroup: 0
+    parentIndex: 8
+    spriteID: f78d06079a944614894b3254042e6d2b
+    layerID: 519
+    mosaicPosition: {x: 1022, y: 2494}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: coin_stack04
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: a8f6d4b2e7fc1434980232cadc1fbc23
+    layerID: 137
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: 'coin 3 '
+    spriteName: 'coin 3 '
+    isGroup: 0
+    parentIndex: 12
+    spriteID: fb9a2633ba7688042bce0f38efae812e
+    layerID: 520
+    mosaicPosition: {x: 513, y: 3565}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 'coin_stack 3 '
+    spriteName: 'coin_stack 3 '
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 73dbf354cb665ec44bf920a68278f314
+    layerID: 521
+    mosaicPosition: {x: 513, y: 2012}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 'shadow 3 '
+    spriteName: 'shadow 3 '
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 67d240c90f88193438082feb54441b7e
+    layerID: 522
+    mosaicPosition: {x: 1022, y: 2784}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: background
+    spriteName: background
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9a3f3597edb96834db310a45ab2996e9
+    layerID: 523
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: _Artboards_
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: af9f07c3bf9a0a946949e62ffffaacc9
+    layerID: 2
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  mosaicPSDLayers: []
+  rigPSDLayers: []
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
